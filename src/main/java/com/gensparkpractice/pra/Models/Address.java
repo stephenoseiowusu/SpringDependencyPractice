@@ -12,4 +12,8 @@ public class Address {
         this.state = state;
         this.country = country;
     }
+    @Override
+    public String toString(){
+        return "{" + "city: " + city + ", state: " + state + " country: " + country +  "}";
+    }
 }

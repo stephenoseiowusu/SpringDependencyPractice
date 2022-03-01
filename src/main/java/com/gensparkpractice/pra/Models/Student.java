@@ -18,4 +18,16 @@ public class Student {
     public void setContact_numbers(List<String> numbers){
         this.contact_numbers = numbers;
     }
+    public String toString(){
+        String result = "{ contact_numbers: {";
+        for(String s : contact_numbers ){
+            result += contact_numbers + " ,";
+        }
+        result += " }";
+        result += " studentID: " + studentID + ", ";
+        result += " Address: " + addr.toString() + ", ";
+        result += " name: " + name + " ";
+        result += "}";
+        return result;
+    }
 }
