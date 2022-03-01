@@ -15,4 +15,7 @@ public class Student {
         this.name = name;
         this.addr = addr;
     }
+    public void setContact_numbers(List<String> numbers){
+        this.contact_numbers = numbers;
+    }
 }
