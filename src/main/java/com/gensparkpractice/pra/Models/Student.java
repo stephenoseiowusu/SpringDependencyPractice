@@ -18,6 +18,9 @@ public class Student {
     public void setContact_numbers(List<String> numbers){
         this.contact_numbers = numbers;
     }
+    public void call(){
+         System.out.println("call method called");
+    }
     public String toString(){
         String result = "{ contact_numbers: {";
         for(String s : contact_numbers ){

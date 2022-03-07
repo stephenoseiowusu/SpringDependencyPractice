@@ -9,7 +9,8 @@ public class DependencyInjectionApplication {
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
 		Student student = (Student)applicationContext.getBean("Student");
-		System.out.println(student);
+		student.call();
+		//System.out.println(student.toString());
 		//SpringApplication.run(DependencyInjectionApplication.class, args);
 	}
 
